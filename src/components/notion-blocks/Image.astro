@@ -40,15 +40,27 @@ if (block.Image.External) {
 <style>
   .image {
     display: flex;
-    margin: 0.2rem auto 0;
+    margin: 0.2rem 0.2rem 0;
   }
   .image > div {
-    margin: 0 auto;
+    margin: 0 0.2rem;
   }
   .image > div > div {
   }
   .image > div > div img {
     display: block;
     max-width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .image > div > div img {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .image > div > div img {
+      max-width: 500px;
+    }
   }
 </style>
